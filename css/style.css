@@ -389,6 +389,9 @@ margin-left:40px}
 /* Start My Frame Work */
 
 .fl-left {float:left}
+.fl-left h2{
+    text-align: center;
+}
 
 p {line-height:1.7;color:#888}
 
