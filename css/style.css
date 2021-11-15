@@ -390,6 +390,33 @@ margin-left:40px}
 
 /* End Contact Me */
 
+/* Start Pricing table*/
+
+.princing-header{
+    text-align: center;
+    color: #292624;
+}
+.pricing-info{
+    color: #000;
+}
+table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+.pricing-table td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+background-color: #dddddd;
+}
+
+/* End Pricing table */
+
 /* Start Footer */
 
 .footer {background-color:#191E22;color:#6A6E71;overflow:hidden;padding-bottom:0px}
