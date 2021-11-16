@@ -1,10 +1,12 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Visit Saudi Arabia</title>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <title>Travel Me</title>
 </head>
 
 <body lang="en">
@@ -15,28 +17,36 @@
 
         <!-- Start Navbar -->
 
-        <div class="navbar">
-            <div class="container">
-                <a href="index.html"><h2 class="logo fl-left">Travel<span>Me</span></h2></a>
-                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="visit.html">Visit</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
-    
-                </ul>
-            </div>
+        <div class="navbar" style="position: fixed;overflow: hidden;background-color: rgb(0, 0, 0);position: fixed;top: 0;width: 100%;">
+        <div class="container">
+            <a href="index.php">
+                <h2 class="logo fl-left">Travel<span>Me</span></h2>
+            </a>
+            <ul>
+                <li><a href="index.php" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a href="aboutus.php">About Us</a>
+                    <div class="dropdown-content">
+                        <a style="color:black;" href="aboutus.php">About Us</a>
+                        <a style="color:black;" href="aboutus.php">Pricing</a>
+                    </div>
+                </li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="contactus.php">Contact Us</a></li>
+
+            </ul>
         </div>
+    </div>
         <!-- End Navbar -->
 
         <!-- Start Slider -->
 
         <div class="slider">
             <div class="intro">
-                <h2>Explore Saudi Arabia</h2>
+                <h1>Explore Saudi Arabia</h1>
                 <br>
                 <a href="visit.html">
-                    <button>Visit</button>
+                    <button>Visit Places</button>
                 </a>
 
             </div>
@@ -307,16 +317,6 @@
     <div class="footer">
         <div class="container">
             <p>Copyright &copy; 2021 TraveMe Co.</p>
-            <ul>
-                <li><a href="#" target="_blank"><i
-                            class="fa fa-facebook-square fa-2x"></i></a></li>
-                <li><a href="#" target="_blank"><i
-                            class="fa fa-twitter-square fa-2x"></i></a></li>
-                <li><a href="#" target="_blank"><i
-                            class="fa fa-linkedin-square fa-2x"></i></a></li>
-                <li><a href="#" target="_blank"><i
-                            class="fa fa-youtube-square fa-2x"></i></a></li>
-            </ul>
         </div>
     </div>
 

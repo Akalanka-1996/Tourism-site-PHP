@@ -13,8 +13,8 @@ body {font-family:Arial , Tahoma;margin:0}
 /* Start Slider */
 
 .header .slider {
-    height:600px;
-    background-image:url('../images/desert.jpg');
+    height:100%;
+    background-image:url('../images/bg-2.jpg');
     -webkit-background-size: cover; /* CSS3 */
     -moz-background-size: cover; /* CSS3 */
     -o-background-size: cover; /* CSS3 */
@@ -27,21 +27,36 @@ body {font-family:Arial , Tahoma;margin:0}
     text-align:center
 }
 
-.header .slider .intro h2 {
+.header .slider .intro h1 {
     display:inline-block;
     border-top:4px solid #FFF;
     border-bottom:4px solid #FFF;
-    font-size:50px;
+    font-size:100px;
     padding: 0px 5px;
     color:#FFF
 }
 
 .header .slider .intro button {
     display: inline-block;
-    background:none;
-    color: #FFF;
-    padding:10px 25px;
-    font-size:22px;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    width: 250px;
+    
+}
+.header .slider .intro button:hover {background-color: #f3f706}
+
+.header .slider .intro button:active {
+  background-color: #f3f706;
+  box-shadow: 0 5px rgb(0, 0, 0);
+  transform: translateY(4px);
 }
 
 /* End Slider */
@@ -49,12 +64,14 @@ body {font-family:Arial , Tahoma;margin:0}
 /* Start Navbar */
 
 .navbar {
-    height:65px;
-    background-color:#252F31;
-    color:#FFF
-}
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
-.navbar .logo span {color: #2ecc71}
+.navbar .logo span {color: #f3f706}
 
 .navbar h2 {
     text-transform:uppercase;
@@ -79,38 +96,46 @@ body {font-family:Arial , Tahoma;margin:0}
 
 .navbar ul a.active,
 .navbar ul li a:hover {
-    color:#2ecc71
+    color:#f3f706;
 }
+
+.dropdown {
+    position:sticky;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position:fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
 
 /* End Navbar */
 
-/* vist */
+/* Visit Page */
 
-#header{
-    text-align: center;
-    color:#F1755A;
-}
-.boxes {
-    margin-top: 20px;
-}
 
-.boxes .box {
-    float: left;
-    text-align: center;
-    width: 30%;
-    padding: 10px;
-    
-}
 
-.boxes .box img {
-    width: 250px;
-
-}
-.boxes .box p{
-    margin-top: -10px;
-}
-
-/* end visit */
 /* End Header */
 
 /* Start Features */
@@ -137,7 +162,8 @@ body {font-family:Arial , Tahoma;margin:0}
 
 .about-me{
     min-height:457px;
-    background-color:#F2F2F2
+    background-color:#ffffff;
+    margin-top: 50px;
 }
 
 .about-me .image {
@@ -146,7 +172,7 @@ body {font-family:Arial , Tahoma;margin:0}
 }
 .about-me .info {
     width: 50%;
-    overflow:hidden
+    overflow:hidden;
 }
 
 .about-me .info h2 {margin-bottom:-5px}
@@ -378,9 +404,9 @@ margin-left:40px}
 }
 
 .contact-me .form input[type="submit"] {
-    background-color: #191E22;
+    background-color: #f3f706;
     display:block;
-    color:#FFF;
+    color:rgb(0, 0, 0);
     height: 40px;
     border:0;
     margin-top:30px;
@@ -431,7 +457,7 @@ background-color: #dddddd;
     margin-right:5px
 }
 
-.footer ul li a {color:#6A6E71}
+.footer ul li a {color:#ffffff}
 
 .footer ul li a:hover {
     color:#FFF
